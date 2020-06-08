@@ -2,25 +2,29 @@
     display: grid;
     grid-gap: 5px;    
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px 350px 50px;
+    grid-template-rows: 80px 400px 200px;
     grid-template-areas:
-        ". h h h h h h h h h h h ."
-        ". m m c c c c c c c c c ."
-        ". f f f f f f f f f f f .";
+        "l h h h h h h h h h h h h"
+        "m m c c c c c c c c c c c"
+        "f f f f f f f f f f f f f";
+}
+.logo {
+    background-color: #FFFFFF;
+   grid-area: l;
 }
 .header {
-	background-color: #0000FF;
+	background-color: #E6E6FA;
     grid-area: h;
 }
 .menu {
-	background-color: #D2691E;
+	background-color: #FF69B4;
     grid-area: m;
 }
 .content {
-	background-color: #228B22;
+	background-color: #AFEEEE;
     grid-area: c;
 }
 .footer {
-	background-color: #FF0000;
+	background-color: #FFDAB9;
    grid-area: f;
 }
